@@ -11,6 +11,8 @@
 		ECB00E342A90A1BB00313D1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB00E332A90A1BB00313D1D /* ContentView.swift */; };
 		ECB00E362A90A1BC00313D1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB00E352A90A1BC00313D1D /* Assets.xcassets */; };
 		ECB00E392A90A1BC00313D1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB00E382A90A1BC00313D1D /* Preview Assets.xcassets */; };
+		ECB00E452A90A24B00313D1D /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB00E442A90A24B00313D1D /* Film.swift */; };
+		ECB00E482A90A86300313D1D /* DownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB00E472A90A86300313D1D /* DownloaderClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		ECB00E332A90A1BB00313D1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECB00E352A90A1BC00313D1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECB00E382A90A1BC00313D1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECB00E442A90A24B00313D1D /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		ECB00E472A90A86300313D1D /* DownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderClient.swift; sourceTree = "<group>"; };
+		ECB00E492A90AEE800313D1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,12 @@
 		ECB00E302A90A1BB00313D1D /* FilmSearchSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				ECB00E312A90A1BB00313D1D /* FilmSearchSwiftUIApp.swift */,
-				ECB00E332A90A1BB00313D1D /* ContentView.swift */,
+				ECB00E492A90AEE800313D1D /* Info.plist */,
+				ECB00E462A90A81300313D1D /* Service */,
+				ECB00E432A90A22400313D1D /* App */,
+				ECB00E422A90A21300313D1D /* View */,
+				ECB00E402A90A20500313D1D /* ViewModel */,
+				ECB00E3F2A90A1EF00313D1D /* Model */,
 				ECB00E352A90A1BC00313D1D /* Assets.xcassets */,
 				ECB00E372A90A1BC00313D1D /* Preview Content */,
 			);
@@ -65,6 +74,45 @@
 				ECB00E382A90A1BC00313D1D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECB00E3F2A90A1EF00313D1D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECB00E442A90A24B00313D1D /* Film.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECB00E402A90A20500313D1D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ECB00E422A90A21300313D1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECB00E332A90A1BB00313D1D /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECB00E432A90A22400313D1D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ECB00E312A90A1BB00313D1D /* FilmSearchSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ECB00E462A90A81300313D1D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ECB00E472A90A86300313D1D /* DownloaderClient.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB00E342A90A1BB00313D1D /* ContentView.swift in Sources */,
+				ECB00E452A90A24B00313D1D /* Film.swift in Sources */,
 				ECB00E322A90A1BB00313D1D /* FilmSearchSwiftUIApp.swift in Sources */,
+				ECB00E482A90A86300313D1D /* DownloaderClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +320,7 @@
 				DEVELOPMENT_TEAM = 5Q9PX5VT7H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilmSearchSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +350,7 @@
 				DEVELOPMENT_TEAM = 5Q9PX5VT7H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FilmSearchSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
