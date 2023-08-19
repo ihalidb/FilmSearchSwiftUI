@@ -21,7 +21,9 @@ class FilmDetailViewModel : ObservableObject {
                 case .failure(let hata):
                     print(hata)
                 case .success(let filmDetail):
-                    self.filmDetail = FilmdetailsViewModel(detail: filmDetail)
+                    DispatchQueue.main.async {
+                        self.filmDetail = FilmdetailsViewModel(detail: filmDetail)
+                    }
             }
         }
     }
