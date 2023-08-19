@@ -13,8 +13,8 @@ class FilmListViewModel : ObservableObject {
     let downloaderClient = DownloaderClient()
     
     func filmSearch(filmName : String) {
-        downloaderClient.filmsDownload(search: filmName) { (sonuc) in
-            switch sonuc {
+        downloaderClient.filmsDownload(search: filmName) { (answer) in
+            switch answer {
                 case.failure(let hata): print(hata)
                 case.success(let filmArray): if let filmArray = filmArray {
                     DispatchQueue.main.async {

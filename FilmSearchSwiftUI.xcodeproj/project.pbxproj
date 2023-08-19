@@ -17,6 +17,8 @@
 		ECB00E4E2A90C48A00313D1D /* ImageDownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB00E4D2A90C48A00313D1D /* ImageDownloaderClient.swift */; };
 		ECB00E502A90C5E300313D1D /* PrivateImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB00E4F2A90C5E300313D1D /* PrivateImage.swift */; };
 		ECB00E522A90D71C00313D1D /* FilmDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB00E512A90D71C00313D1D /* FilmDetail.swift */; };
+		ECB00E542A90DAE300313D1D /* FilmDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB00E532A90DAE300313D1D /* FilmDetailViewModel.swift */; };
+		ECB00E562A90DDA400313D1D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB00E552A90DDA400313D1D /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		ECB00E4D2A90C48A00313D1D /* ImageDownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderClient.swift; sourceTree = "<group>"; };
 		ECB00E4F2A90C5E300313D1D /* PrivateImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateImage.swift; sourceTree = "<group>"; };
 		ECB00E512A90D71C00313D1D /* FilmDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetail.swift; sourceTree = "<group>"; };
+		ECB00E532A90DAE300313D1D /* FilmDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewModel.swift; sourceTree = "<group>"; };
+		ECB00E552A90DDA400313D1D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				ECB00E4B2A90B8F800313D1D /* FilmViewModel.swift */,
+				ECB00E532A90DAE300313D1D /* FilmDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			children = (
 				ECB00E332A90A1BB00313D1D /* FilmListView.swift */,
 				ECB00E4F2A90C5E300313D1D /* PrivateImage.swift */,
+				ECB00E552A90DDA400313D1D /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,7 +206,9 @@
 				ECB00E342A90A1BB00313D1D /* FilmListView.swift in Sources */,
 				ECB00E452A90A24B00313D1D /* Film.swift in Sources */,
 				ECB00E4C2A90B8F800313D1D /* FilmViewModel.swift in Sources */,
+				ECB00E562A90DDA400313D1D /* DetailView.swift in Sources */,
 				ECB00E322A90A1BB00313D1D /* FilmSearchSwiftUIApp.swift in Sources */,
+				ECB00E542A90DAE300313D1D /* FilmDetailViewModel.swift in Sources */,
 				ECB00E482A90A86300313D1D /* DownloaderClient.swift in Sources */,
 				ECB00E4E2A90C48A00313D1D /* ImageDownloaderClient.swift in Sources */,
 				ECB00E522A90D71C00313D1D /* FilmDetail.swift in Sources */,
